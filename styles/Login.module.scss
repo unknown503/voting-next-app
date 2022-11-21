@@ -1,0 +1,54 @@
+@import "variables";
+@import "util";
+.page {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(61deg, #1d33cb 0%, #200b5a 83%);
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: $white2-color;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.18);
+  h2 {
+    text-align: center;
+    margin-bottom: 2.2rem;
+    font-weight: bolder;
+  }
+  button {
+    margin-right: 0;
+  }
+}
+@mixin square($area: 20rem) {
+  background-color: rgb(255, 255, 255, 0.2);
+  width: $area;
+  height: $area;
+  border-radius: 3rem;
+  rotate: 60deg;
+  position: absolute;
+  z-index: 0;
+}
+.squares {
+  div:nth-child(1) {
+    @include square();
+    top: -2rem;
+    right: -10rem;
+  }
+  div:nth-child(2) {
+    @include square();
+    bottom: -14rem;
+    left: 22rem;
+  }
+  div:nth-child(3) {
+    @include square(14rem);
+    top: -6rem;
+    right: 6rem;
+  }
+}

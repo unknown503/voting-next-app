@@ -1,0 +1,139 @@
+@import "variables";
+@import "util";
+
+.header {
+  main {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/home/hero.jpg");
+    background-position: 0 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    .hero {
+      color: $white-color;
+      padding: 6rem 1rem;
+      width: 100%;
+      text-align: center;
+      @include breakpoint(sm) {
+        width: 99%;
+      }
+      @include breakpoint(md) {
+        text-align: justify;
+        width: 80%;
+      }
+      @include breakpoint(lg) {
+        padding: 6rem 12rem;
+        width: 70%;
+      }
+      @include breakpoint(xl) {
+        width: 60%;
+      }
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.4rem;
+      }
+      p {
+        color: $light-color;
+      }
+      .buttons {
+        padding: 1.6rem 0;
+      }
+    }
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5rem 0;
+  background-color: $white2-color;
+
+  img {
+    object-fit: cover;
+    width: 25rem;
+    border-radius: 0.6rem;
+    margin-right: 3rem;
+  }
+  h2 {
+    margin-top: 0.3rem;
+    font-size: 3rem;
+  }
+  span {
+    color: $gray-color;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .featureGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  p {
+    margin: 1.4rem 0 2rem;
+    max-width: fit-content;
+    text-align: justify;
+    color: $gray-color;
+  }
+}
+
+.feature {
+  background-color: $white-color;
+  padding: 1.8rem 2.4rem;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  div {
+    color: $blue-color;
+  }
+  h3 {
+    margin: 0.6rem 0 0.4rem 0;
+  }
+}
+.portable {
+  background-color: $white2-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 4rem;
+
+  .content {
+    border-radius: 1rem;
+    background-color: $white-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+    h2 {
+      margin-top: 0.3rem;
+      font-size: 2.8rem;
+    }
+    span {
+      color: $gray-color;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+  }
+  .picture {
+    border-radius: 1rem;
+    background-color: $white-color;
+    img {
+      transform: scale(1.2);
+      object-fit: cover;
+      width: 15rem;
+      height: 100%;
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+      margin-right: 4rem;
+      transform-origin: bottom;
+    }
+  }
+}
