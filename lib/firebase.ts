@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { DocumentData, FieldValue, getDoc, getFirestore, increment, onSnapshot, QuerySnapshot, updateDoc } from 'firebase/firestore'
+import { DocumentData, getDoc, getFirestore, increment, onSnapshot, QuerySnapshot, updateDoc } from 'firebase/firestore'
 import { collection, doc, addDoc, getDocs } from 'firebase/firestore'
-import { Unsubscribe } from "redux";
 
 const firebaseConfig = {
     apiKey: process.env.NEXT_PUBLIC_APIKEY,

@@ -51,7 +51,7 @@ export default function vote() {
     }
 
     useEffect(() => {
-        setState.catch(console.error)
+        setState.catch(toast.error)
     }, [status])
 
     useEffect(() => {

@@ -8,7 +8,6 @@ import { Provider } from 'react-redux';
 import { store } from '../store/store';
 
 export default function App({ Component, pageProps }: AppProps) {
-  // const { store, props } = wrapper.useWrappedStore(pageProps);
   return <>
     <SessionProvider session={pageProps.session}>
       <Provider store={store}>

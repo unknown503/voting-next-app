@@ -4,7 +4,6 @@ import { FC, PropsWithChildren } from 'react';
 import { useEffect } from "react";
 import { useSession } from 'next-auth/react';
 import useSetUserState from '../lib/state';
-import Image from 'next/image'
 
 export default function Home() {
   const { status } = useSession()
@@ -18,9 +17,6 @@ export default function Home() {
   useEffect(() => {
     setState.catch(console.error)
   }, [status])
-
-
-
 
   return (
     <>
