@@ -2,7 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, you will need to set up the environment variables. You will have an .env example file so you can populate it with your own data. 
+
+- NEXTAUTH_SECRET: Will be used to encrypt the jwt, you can leave it like it is on the example.
+- NEXTAUTH_URL: The base url of your website. You can leave it like it is if you are testing it on a local server with the default port.
+- The rest of the variables will need to be collected from your own [Firebase](https://firebase.google.com/) project in order to use Firestore Database.
+
+Finally, you can run the development server:
 
 ```bash
 npm run dev
