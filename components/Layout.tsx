@@ -14,7 +14,7 @@ export const Layout: FC<IWrapperProps> = ({ children }) => {
                 <title>RealVoting - Votaciones online</title>
                 <meta name="description" content="Voting app" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
             </Head>
             <Navbar />
             {children}
